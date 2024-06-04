@@ -211,7 +211,213 @@ void theme1() {
 
 }
 
-void theme2() { std::cout << '2' << '\n'; }
+void theme2() {
+    
+    int questions{ 10 }; //Количество вопросов
+    int score{};
+    int maxScore{ 18 }; // Максимально очков в этой теме
+    for (int i = 1; i < questions + 1; i++)
+    {
+        int rightAnswer{};
+        int userAnswer{};
+
+        int complexity{};//сложность(от 1 до 3)
+
+        switch (i)
+        {
+        case(1):
+            complexity = 1; //сложность(от 1 до 3)
+            rightAnswer = 1; //Правильный ответ
+
+            std::cout << "Вопрос №" << i << '\n';
+            std::cout << "Что такое процессор?" << '\n'; //вопрос
+            std::cout << "1) Центральное процессорное устройство" << '\n' //Варианты ответа
+                << "2) Центральное программируемое устройство" << '\n'
+                << "3) Центральная память пользователя" << '\n'
+                << "4) Контрольная точка управления" << '\n';
+
+            std::cout << "Ваш ответ: ";
+            std::cin >> userAnswer;
+            if (rightAnswer == userAnswer) {
+
+                score = score + 1 * complexity;
+            }
+            break;
+        case(2):
+            complexity = 2; //сложность(от 1 до 3)
+            rightAnswer = 2; //Правильный ответ
+
+            std::cout << "Вопрос №" << i << '\n';
+            std::cout << "Какой из главных компонентов отвечает за временное хранение данных во время их обработки?" << '\n'; //вопрос
+            std::cout << "1) Жесткий диск" << '\n' //Варианты ответа
+                << "2) Оперативная память" << '\n'
+                << "3) Видеокарта" << '\n'
+                << "4) Процессор" << '\n';
+
+            std::cout << "Ваш ответ: ";
+            std::cin >> userAnswer;
+            if (rightAnswer == userAnswer) {
+
+                score = score + 1 * complexity;
+            }
+            break;
+        case(3):
+            complexity = 1; //сложность(от 1 до 3)
+            rightAnswer = 3; //Правильный ответ
+
+            std::cout << "Вопрос №" << i << '\n';
+            std::cout << "Какая технология беспроводного соединения обеспечивает подключение к интернету?" << '\n'; //вопрос
+            std::cout << "1) LAN" << '\n' //Варианты ответа
+                << "2) WAN" << '\n'
+                << "3) Wi-Fi" << '\n'
+                << "4) Ethernet" << '\n';
+
+            std::cout << "Ваш ответ: ";
+            std::cin >> userAnswer;
+            if (rightAnswer == userAnswer) {
+
+                score = score + 1 * complexity;
+            }
+            break;
+        case(4):
+            complexity = 2; //сложность(от 1 до 3)
+            rightAnswer = 2; //Правильный ответ
+
+            std::cout << "Вопрос №" << i << '\n';
+            std::cout << "Какая функция отвечает за управление передачей данных между компьютером и его портативными устройствами?" << '\n'; //вопрос
+            std::cout << "1) Операционная система" << '\n' //Варианты ответа
+                << "2) Драйвер" << '\n'
+                << "3) Протокол" << '\n'
+                << "4) Браузер" << '\n';
+
+            std::cout << "Ваш ответ: ";
+            std::cin >> userAnswer;
+            if (rightAnswer == userAnswer) {
+
+                score = score + 1 * complexity;
+            }
+            break;
+        case(5):
+            complexity = 1; //сложность(от 1 до 3)
+            rightAnswer = 1; //Правильный ответ
+
+            std::cout << "Вопрос №" << i << '\n';
+            std::cout << "Какой порт используется для подключения кабелей и мышей к компьютеру?" << '\n'; //вопрос
+            std::cout << "1) USB" << '\n' //Варианты ответа
+                << "2)  HDMI" << '\n'
+                << "3) VGA" << '\n'
+                << "4) Ethernet" << '\n';
+
+            std::cout << "Ваш ответ: ";
+            std::cin >> userAnswer;
+            if (rightAnswer == userAnswer) {
+
+                score = score + 1 * complexity;
+            }
+            break;
+        case(6):
+            complexity = 2; //сложность(от 1 до 3)
+            rightAnswer = 2; //Правильный ответ
+
+            std::cout << "Вопрос №" << i << '\n';
+            std::cout << "Что такое БИОС?" << '\n'; //вопрос
+            std::cout << "1) Базовая операционная система" << '\n' //Варианты ответа
+                << "2) Программное обеспечение для настройки компьютера при включении" << '\n'
+                << "3) Видеокарта" << '\n'
+                << "4) Системное звуковое оборудование" << '\n';
+
+            std::cout << "Ваш ответ: ";
+            std::cin >> userAnswer;
+            if (rightAnswer == userAnswer) {
+
+                score = score + 1 * complexity;
+            }
+            break;
+        case(7):
+            complexity = 3; //сложность(от 1 до 3)
+            rightAnswer = 3; //Правильный ответ
+
+            std::cout << "Вопрос №" << i << '\n';
+            std::cout << "Что означает аббревиатура GPU?" << '\n'; //вопрос
+            std::cout << "1) Общий процессор" << '\n' //Варианты ответа
+                << "2) Графический блок" << '\n'
+                << "3) Графический процессор" << '\n'
+                << "4) Общий блок питания" << '\n';
+
+            std::cout << "Ваш ответ: ";
+            std::cin >> userAnswer;
+            if (rightAnswer == userAnswer) {
+
+                score = score + 1 * complexity;
+            }
+            break;
+        case(8):
+            complexity = 1; //сложность(от 1 до 3)
+            rightAnswer = 3; //Правильный ответ
+
+            std::cout << "Вопрос №" << i << '\n';
+            std::cout << "Какая функция отвечает за преобразование преобразования сигнала в звуковой сигнал?" << '\n'; //вопрос
+            std::cout << "1) Видеокарта" << '\n' //Варианты ответа
+                << "2) Процессор" << '\n'
+                << "3) Звуковая карта" << '\n'
+                << "4) Монитор" << '\n';
+
+            std::cout << "Ваш ответ: ";
+            std::cin >> userAnswer;
+            if (rightAnswer == userAnswer) {
+
+                score = score + 1 * complexity;
+            }
+            break;
+        case(9):
+            complexity = 2; //сложность(от 1 до 3)
+            rightAnswer = 1; //Правильный ответ
+
+            std::cout << "Вопрос №" << i << '\n';
+            std::cout << "Что означает аббревиатура URL-адрес?" << '\n'; //вопрос
+            std::cout << "1) Унифицированный указатель ресурса" << '\n' //Варианты ответа
+                << "2) Универсальная удаленная ссылка" << '\n'
+                << "3) Единый язык маршрутизацииr" << '\n'
+                << "4) Универсальная ссылка на ресурсы" << '\n';
+
+            std::cout << "Ваш ответ: ";
+            std::cin >> userAnswer;
+            if (rightAnswer == userAnswer) {
+
+                score = score + 1 * complexity;
+            }
+            break;
+        case(10):
+            complexity = 3; //сложность(от 1 до 3)
+            rightAnswer = 1; //Правильный ответ
+
+            std::cout << "Вопрос №" << i << '\n';
+            std::cout << "Что такое IP-адрес?" << '\n'; //вопрос
+            std::cout << "1) Уникальный идентификатор компьютера в сети Интернет" << '\n' //Варианты ответа
+                << "2) Кодовое имя для интернет-провайдера" << '\n'
+                << "3) Адрес электронной почты" << '\n'
+                << "4) Номер компьютера" << '\n';
+
+            std::cout << "Ваш ответ: ";
+            std::cin >> userAnswer;
+            if (rightAnswer == userAnswer) {
+
+                score = score + 1 * complexity;
+            }
+            break;
+
+        default:
+            break;
+        }
+
+    }
+    std::cout << "Ваши очки: " << score << "/" << maxScore << '\n';
+
+    menu();
+
+
+
+}
 
 void theme3() { std::cout << '3' << '\n'; }
 
@@ -220,8 +426,8 @@ void menu() {
 
     int i;
     std::cout << "МЕНЮ" << '\n';
-    std::cout << "1)Игры " << '\n'
-              << "2) " << '\n'
+    std::cout << "1) Игры " << '\n'
+              << "2) Компьютер и его устройство" << '\n'
               << "3) " << '\n';
     std::cout << "Ваш выбор: ";
     std::cin >> i;
