@@ -419,7 +419,216 @@ void theme2() {
 
 }
 
-void theme3() { std::cout << '3' << '\n'; }
+void theme3() { 
+
+    int questions{ 10 }; //Количество вопросов
+    int score{};
+    int maxScore{ 21 }; // Максимально очков в этой теме
+    for (int i = 1; i < questions + 1; i++)
+    {
+        int rightAnswer{};
+        int userAnswer{};
+
+        int complexity{};//сложность(от 1 до 3)
+
+        switch (i)
+        {
+        case(1):
+            complexity = 2; //сложность(от 1 до 3)
+            rightAnswer = 2; //Правильный ответ
+
+            std::cout << "Вопрос №" << i << '\n';
+            std::cout << "Что такое «алгоритм»?" << '\n'; //вопрос
+            std::cout << "1) Язык программирования" << '\n' //Варианты ответа
+                << "2) Набор инструкций для выполнения задачи" << '\n'
+                << "3) Разработка интегрированной среды" << '\n'
+                << "4) Модуль для обработки данных" << '\n';
+
+            std::cout << "Ваш ответ: ";
+            std::cin >> userAnswer;
+            if (rightAnswer == userAnswer) {
+
+                score = score + 1 * complexity;
+            }
+            break;
+        case(2):
+            complexity = 2; //сложность(от 1 до 3)
+            rightAnswer = 3; //Правильный ответ
+
+            std::cout << "Вопрос №" << i << '\n';
+            std::cout << "Какая конструкция используется в языке программирования для повторения выполнения определенного блока кода?" << '\n'; //вопрос
+            std::cout << "1) if-else" << '\n' //Варианты ответа
+                << "2) переключатель-регистр" << '\n'
+                << "3) for-цикл" << '\n'
+                << "4) try-catch" << '\n';
+
+            std::cout << "Ваш ответ: ";
+            std::cin >> userAnswer;
+            if (rightAnswer == userAnswer) {
+
+                score = score + 1 * complexity;
+            }
+            break;
+        case(3):
+            complexity = 1; //сложность(от 1 до 3)
+            rightAnswer = 3; //Правильный ответ
+
+            std::cout << "Вопрос №" << i << '\n';
+            std::cout << "Простой алголоподобный язык с русской лексикой и объединени командами управления программными исполнителями" << '\n'; //вопрос
+            std::cout << "1) Паскаль" << '\n' //Варианты ответа
+                << "2) Алгол" << '\n'
+                << "3) Кумир" << '\n'
+                << "4) Бейсик" << '\n';
+
+            std::cout << "Ваш ответ: ";
+            std::cin >> userAnswer;
+            if (rightAnswer == userAnswer) {
+
+                score = score + 1 * complexity;
+            }
+            break;
+        case(4):
+            complexity = 1; //сложность(от 1 до 3)
+            rightAnswer = 3; //Правильный ответ
+
+            std::cout << "Вопрос №" << i << '\n';
+            std::cout << "Что такое \"переменная\" в программировании?" << '\n'; //вопрос
+            std::cout << "1) Инструкция, выполняющая действие" << '\n' //Варианты ответа
+                << "2) Структура организации повторяющихся операций" << '\n'
+                << "3) Именованное хранилище для данных" << '\n'
+                << "4) Условие, определяющее, какой блок кода будет выбирать" << '\n';
+
+            std::cout << "Ваш ответ: ";
+            std::cin >> userAnswer;
+            if (rightAnswer == userAnswer) {
+
+                score = score + 1 * complexity;
+            }
+            break;
+        case(5):
+            complexity = 3; //сложность(от 1 до 3)
+            rightAnswer = 3; //Правильный ответ
+
+            std::cout << "Вопрос №" << i << '\n';
+            std::cout << "Какая функция используется для получения случайных чисел в рамках языка программирования Python?" << '\n'; //вопрос
+            std::cout << "1) random()" << '\n' //Варианты ответа
+                << "2)  randint()" << '\n'
+                << "3) randrange()" << '\n'
+                << "4) randomin()\n";
+
+            std::cout << "Ваш ответ: ";
+            std::cin >> userAnswer;
+            if (rightAnswer == userAnswer) {
+
+                score = score + 1 * complexity;
+            }
+            break;
+        case(6):
+            complexity = 3; //сложность(от 1 до 3)
+            rightAnswer = 1; //Правильный ответ
+
+            std::cout << "Вопрос №" << i << '\n';
+            std::cout << "Какие конструкции используются для обработки исключений в языке программирования Java?" << '\n'; //вопрос
+            std::cout << "1) try-catch" << '\n' //Варианты ответа
+                << "2) if-else" << '\n'
+                << "3) switch-case" << '\n'
+                << "4) for-cycle" << '\n';
+
+            std::cout << "Ваш ответ: ";
+            std::cin >> userAnswer;
+            if (rightAnswer == userAnswer) {
+
+                score = score + 1 * complexity;
+            }
+            break;
+        case(7):
+            complexity = 1; //сложность(от 1 до 3)
+            rightAnswer = 1; //Правильный ответ
+
+            std::cout << "Вопрос №" << i << '\n';
+            std::cout << "Как называется процесс перевода исходного кода программы на высоком уровне в машинный код?" << '\n'; //вопрос
+            std::cout << "1) Компиляция" << '\n' //Варианты ответа
+                << "2) Интерпретация" << '\n'
+                << "3) Обработка" << '\n'
+                << "4) Связывание" << '\n';
+
+            std::cout << "Ваш ответ: ";
+            std::cin >> userAnswer;
+            if (rightAnswer == userAnswer) {
+
+                score = score + 1 * complexity;
+            }
+            break;
+        case(8):
+            complexity = 2; //сложность(от 1 до 3)
+            rightAnswer = 2; //Правильный ответ
+
+            std::cout << "Вопрос №" << i << '\n';
+            std::cout << "Что такое \"рекурсия\" в программировании?" << '\n'; //вопрос
+            std::cout << "1) Повторное использование кода" << '\n' //Варианты ответа
+                << "2) Вызов функции из самой себя" << '\n'
+                << "3) Открытие части кода от других программистов" << '\n'
+                << "4) Создание копии программы для исполнения" << '\n';
+
+            std::cout << "Ваш ответ: ";
+            std::cin >> userAnswer;
+            if (rightAnswer == userAnswer) {
+
+                score = score + 1 * complexity;
+            }
+            break;
+        case(9):
+            complexity = 3; //сложность(от 1 до 3)
+            rightAnswer = 3; //Правильный ответ
+
+            std::cout << "Вопрос №" << i << '\n';
+            std::cout << "Язык, созданный компанией Apple для разработчиков iOS и macOS" << '\n'; //вопрос
+            std::cout << "1) bjective-C" << '\n' //Варианты ответа
+                << "2) Xcode 6" << '\n'
+                << "3) Swift" << '\n'
+                << "4) iLang" << '\n';
+
+            std::cout << "Ваш ответ: ";
+            std::cin >> userAnswer;
+            if (rightAnswer == userAnswer) {
+
+                score = score + 1 * complexity;
+            }
+            break;
+        case(10):
+            complexity = 3; //сложность(от 1 до 3)
+            rightAnswer = 2; //Правильный ответ
+
+            std::cout << "Вопрос №" << i << '\n';
+            std::cout << "Многопоточный язык, создавший компанию Google " << '\n'; //вопрос
+            std::cout << "1) Haskell" << '\n' //Варианты ответа
+                << "2) Golang" << '\n'
+                << "3) Clojure" << '\n'
+                << "4) Android" << '\n';
+
+            std::cout << "Ваш ответ: ";
+            std::cin >> userAnswer;
+            if (rightAnswer == userAnswer) {
+
+                score = score + 1 * complexity;
+            }
+            break;
+
+        default:
+            break;
+        }
+
+    }
+    std::cout << "Ваши очки: " << score << "/" << maxScore << '\n';
+
+    menu();
+
+
+
+
+
+
+}
 
 void menu() {
     setlocale(LC_ALL, "Russian");
@@ -428,7 +637,7 @@ void menu() {
     std::cout << "МЕНЮ" << '\n';
     std::cout << "1) Игры " << '\n'
               << "2) Компьютер и его устройство" << '\n'
-              << "3) " << '\n';
+              << "3) Программирование" << '\n';
     std::cout << "Ваш выбор: ";
     std::cin >> i;
     switch (i)
