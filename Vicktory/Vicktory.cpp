@@ -2,7 +2,7 @@
 //
 
 #include <iostream>
-void menu();
+void menuTheme();
 
 void theme1() {
     
@@ -206,7 +206,7 @@ void theme1() {
     }
     std::cout << "Ваши очки: " << score << "/" << maxScore << '\n';
 
-    menu();
+    menuTheme();
 
 
 }
@@ -413,7 +413,7 @@ void theme2() {
     }
     std::cout << "Ваши очки: " << score << "/" << maxScore << '\n';
 
-    menu();
+    menuTheme();
 
 
 
@@ -621,7 +621,7 @@ void theme3() {
     }
     std::cout << "Ваши очки: " << score << "/" << maxScore << '\n';
 
-    menu();
+    menuTheme();
 
 
 
@@ -630,15 +630,15 @@ void theme3() {
 
 }
 
-void menu() {
+void menuTheme() {
     setlocale(LC_ALL, "Russian");
 
     int i;
-    std::cout << "(ВЫХОД ИЗ ПРОГРАММЫ ПРОИЗВОДЯТСЯ CTRL+C)\n";
-    std::cout << "МЕНЮ" << '\n';
-    std::cout << "1) Игры " << '\n'
-              << "2) Компьютер и его устройство" << '\n'
-              << "3) Программирование" << '\n';
+    std::cout << "(Выход из программы осуществляется с помощью CTRL + C)\n";
+    std::cout << "Меню выбора тем: "<< '\n';
+    std::cout << "1) Игры(10 вопросов) " << '\n'
+              << "2) Компьютер и его устройство(10 вопросов)" << '\n'
+              << "3) Программирование(10 вопросов)" << '\n';
     std::cout << "Ваш выбор: ";
     std::cin >> i;
     switch (i)
@@ -660,7 +660,7 @@ void menu() {
 }
 int main()
 {
-    menu();
+    menuTheme();
 
     
 
