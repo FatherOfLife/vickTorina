@@ -166,17 +166,19 @@ int main()
             default:
                 break;
             }
-
+            
             break;
         case(2):
             yourScore = score1 + score2 + score3;
             scoretable(yourScore);
+
             break;
         
         case(3):
             ++b;
             break;
         default:
+            
             break;
         }
 
