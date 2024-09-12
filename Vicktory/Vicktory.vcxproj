@@ -127,7 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="flib.cpp" />
     <ClCompile Include="Vicktory.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="themes.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
